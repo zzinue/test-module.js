@@ -96,7 +96,7 @@ console.log("-------------")
 
 // logicos 
 
-/* EJERCICIO 1: pedir 2 números al usaurio y mostrar en consola el resultado
+/*EJERCICIO 1: pedir 2 números al usuario y mostrar en consola el resultado
 de aplicar todas las operaciones aritmeticas
 entre esos dos números*/
 
@@ -109,22 +109,42 @@ name2=Number(name2)
 let suma= name1+name2
 let resta= name1-name2
 let div= name1/name2
+let multiplicacion= name1*name2
 
-console.log(suma)
-console.log(resta)
-console.log(div)*/
+console.log(`la suma es ${suma}`)
+console.log(`la resta es ${resta}`)
+console.log(`la division es ${div}`)
+console.log(` la multiplicacion es ${multiplicacion}`)*/
 
 
-// EJERCICIO 2 = pedir al usuario dos numeros y escribir en consola
-// si el primer número es mayor que el segundo
 
-/*let pedir1= prompt("dame el primer número")
-let pedir2= prompt("dame el segundo número")
+/*EJERCICIO 2 = pedir al usuario dos numeros y escribir en consola
+// si el primer número es mayor que el segundo*/
 
-pedir1=Number(pedir1)
-pedir2= Number(pedir2)
-let resultado= pedir>pedir2
-console.log(``)*/
+/*let give1= prompt("dame el primer número")
+let give2= prompt("dame el segundo número")
+
+give1=Number(give1)
+give2= Number(give2)
+
+let resultado= give1>give2
+console.log(`el primer número es mayor que el segundo ${resultado}`)*/
+
+/*EJERCICIO 3: Pedir al usuario dos letras, y determinar
+si la primera aparece antes o después en el alfabeto */
+
+let ask1=prompt("dame la primera letra")
+let ask2=prompt("dame la segunda letra")
+
+/*ask1=Number(ask1)
+ask2=Number(ask2)*/
+
+let comparation=ask1<=ask2
+if (comparation===true) {
+    console.log(`primera letra aparece antes en el alfabeto `)
+} else{
+    console.log(`primera letra aparece despues en el alfabeto `)
+}
 
 // operadores lógicos 
 
@@ -150,8 +170,8 @@ else if (name1===name2){
  }
 */
 
-// NOT 
-let value= undefined
+// Not
+/*let value= undefined
 if(!value){
      console.log(value)
-}
+}*/
