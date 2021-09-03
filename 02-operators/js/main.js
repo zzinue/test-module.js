@@ -133,18 +133,18 @@ console.log(`el primer número es mayor que el segundo ${resultado}`)*/
 /*EJERCICIO 3: Pedir al usuario dos letras, y determinar
 si la primera aparece antes o después en el alfabeto */
 
-let ask1=prompt("dame la primera letra")
+/*let ask1=prompt("dame la primera letra")
 let ask2=prompt("dame la segunda letra")
 
 /*ask1=Number(ask1)
 ask2=Number(ask2)*/
 
-let comparation=ask1<=ask2
+/*let comparation=ask1<=ask2
 if (comparation===true) {
     console.log(`primera letra aparece antes en el alfabeto `)
 } else{
     console.log(`primera letra aparece despues en el alfabeto `)
-}
+}*/
 
 // operadores lógicos 
 
@@ -175,3 +175,70 @@ else if (name1===name2){
 if(!value){
      console.log(value)
 }*/
+
+/*console.log("------------------")
+// jueves 2 de sep 2021 
+let age= 17
+if(age>=18){
+    console.log(`eres mayor`)
+}else {
+    console.log(`eres menor`)
+}*/
+
+
+let hora=17
+if (hora>=0 && hora<=5){
+    console.log(`dejenme dormir`)
+} else if (hora>=6 && hora<=11){
+    console.log(`buenos dias`)
+}else if (hora>=12 && hora<=19){
+    console.log(`buenas tardes`)
+}else {
+    console.log(`buenas noches`)
+}
+
+//operador ternario: para hacer validaciones rápidas
+// (condicion) ? (verdadero) : (falso)
+let edad=24 
+let eresMayor= edad >=18 ? "eres mayor de edad" : "eres menor de edad"
+console.log(`validacion ${eresMayor}`)
+
+// switch 
+/* 
+domingo - 0
+lunes - 1
+martes- 2
+miercoles-3 
+jueves- 4 
+viernes- 5 
+sabado- 6
+
+*/
+let today= 7
+switch(today){
+    case 0: 
+        console.log("domingo")
+        break;
+    case 1:
+        console.log("lunes")
+        break; 
+    case 2:
+        console.log("martes")
+     case 3:
+        console.log("miercoles")
+        break; 
+    case 4:
+        console.log("jueves")
+        break; 
+    case 5:
+        console.log("viernes")
+        break; 
+    case 6:
+        console.log("sabado")
+        break;
+    default:
+        console.log("dia invalido")
+        break; 
+
+}
+
