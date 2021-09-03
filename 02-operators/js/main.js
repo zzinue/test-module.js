@@ -214,7 +214,7 @@ viernes- 5
 sabado- 6
 
 */
-let today= 7
+let today= 4
 switch(today){
     case 0: 
         console.log("domingo")
@@ -241,4 +241,6 @@ switch(today){
         break; 
 
 }
+
+
 
