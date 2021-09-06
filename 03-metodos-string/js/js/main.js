@@ -116,7 +116,7 @@ function comparingStrings (str1, str2){
  input: 'Programación Javascript'
  Output: 'Programación'*/
 
-let stringOne= prompt("inrtoduce one string with two words");
+/*let stringOne= prompt("inrtoduce one string with two words");
 let string1and2= stringOne.split(" ");
 console.log (string1and2)
 
@@ -126,7 +126,7 @@ if (string1and2[0].length>string1and2[1].length){
     console.log(`el string ${string1and2[1]}es mas largo`)
 }else {
     console.log("ambos strings son iguales")
-}
+}*/
 
 
 
@@ -252,32 +252,31 @@ mandar mensaje " que numeros  quieres operacionalizar"*/
 
 
 
-/*function operations (number1, number2, operation){
+function operations (nu1, nu2, operation){
     let result
-    switch (operations) {
-        case "suma"
-            result = number1 + number2 
+    switch (operation) {
+        case "suma":
+            result = `El resultado de la operacion "${operation}" de los numeros es: ${nu1+ nu2}`
             break; 
-        case "resta"
-             resta= number1-number2
+        case "resta":
+             resta=`El resultado de la operacion "${operation}" de los numeros es: ${nu1 - nu2}`
              break;
-        case "multiplicacion"
-             result= number1 * number2 
+        case "multiplicacion":
+             result= `El resultado de la operacion "${operation}" de los numeros es: ${nu1 * nu2}`
                 break; 
-        case "division"
-            result= number1/number2
+        case "division":
+            result= `El resultado de la operacion "${operation}" de los numeros es: ${nu1 / nu2}`
              break;
         default:
-        alert ("no existe operation")
+       // result= ("no existe operation")
         break;
     }
-    return `el resultado de la operacion "${operacion}"de los numeros es:${result}`
+    return result
 }
 
 
-let operationChoiced = prompt("ingresa que operacion quiere realizar \n opcion1=suma")
-let numero1= parseInt (prompt("ingresa el valor de numero 1"))
-let numero2= parseInt (prompt ("ingresa el valor de numero 2"))
+let operationChoiced = prompt("ingresa que operacion quiere realizar \n opcion1=suma \n opcion1=resta \n opcion1=multiplicacion \n opcion1=division")
+let nu1= parseInt (prompt("ingresa el valor de numero 1"))
+let nu2= parseInt (prompt ("ingresa el valor de numero 2"))
 
-
-console.log (operations(numero1. numero2, operationChoiced))*/ 
+console.log (operations(nu1. nu2, operationChoiced))
