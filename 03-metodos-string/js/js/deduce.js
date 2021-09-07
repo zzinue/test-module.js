@@ -62,7 +62,7 @@ Crear una funcion que me indique si un string comienza con
  -definir un string y almacenarlo en una variable
  crear una funcion que indique con que comienza ese string
 */
-function beginWord (word){
+/*function beginWord (word){
     let newString = ''
     let int=''
     let min=word.toLowerCase()   
@@ -93,4 +93,9 @@ function beginWord (word){
 }
 let word= prompt("ingresa la oracion")
 let remaining= beginWord (word)
-console.log(remaining)
+console.log(remaining)*/
+
+
+/*EJERCICIOS DE FER EN CLASE
+
+*/
