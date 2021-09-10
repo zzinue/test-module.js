@@ -184,7 +184,7 @@ o igual que el largo de la frase y aumentarle una unidad
 5.- evaluar condicion
 
 */
-let phrase= prompt("give me your phrase")
+/*let phrase= prompt("give me your phrase")
 let phraseLength= phrase.length
 let result=""
 for (index=0; index<=phraseLength;index++){
@@ -198,7 +198,7 @@ for (index=0; index<=phraseLength;index++){
 
     }
 }
-console.log(result)
+console.log(result)*/
 
 
 
