@@ -60,7 +60,7 @@ que pida tantos nombre completos de koders como se haya indicado, y
 que imprima el nombre del koder y su numero asignado.
 */
 
-let cantidad=  prompt("cuantos koders quieres incluir")
+/*let cantidad=  prompt("cuantos koders quieres incluir")
 let MyArray=[]
 function cantidadKoders(){
     for (let i=1; i<=cantidad;i++ ){
@@ -74,7 +74,7 @@ function cantidadKoders(){
     }
  
 }
-cantidadKoders(cantidad)
+cantidadKoders(cantidad)*/
 
 
 //let findKoder=prompt("ahora dime el número de koder que quieres conocer")
@@ -84,16 +84,16 @@ cantidadKoders(cantidad)
 /*A partir del ejercicio anterior:
 Crear una funcion que permita saber el nombre de algun koder
 basado en su numero asignado*/
-let buscar= prompt("que numero de koder quieres buscar")
+/*let buscar= prompt("que numero de koder quieres buscar")
 
-console.log(MyArray[buscar-1])
+console.log(MyArray[buscar-1])*/
 
 
 
 /*- imprimir la lista de koders en orden alfabetico descendiente*/
- MyArray.sort()
+ //MyArray.sort()
  //MyArray.pop()
- console.log(MyArray)
+ //console.log(MyArray)
 
 /*- Crear una nueva lista que contenga los nombres de los koders
   con la siguiente estructura
@@ -107,14 +107,50 @@ console.log(MyArray[buscar-1])
   -poner dos splits uno para la divi
   */
 //let newArray= [MyArray]
-let newArray=MyArray.split()
-console.log(newArray)
+/*const arrayKoders= [
+    "Fanny alvarez",
+    "Elias herrrera", 
+    "kraken perez salians",
+    "Claud Rodrguez"
 
+]
+function addKoder (koder){
+    let koder= prompt("agrega el nombre del koder")
+    arrayKoders.push (koder)
+}
+function printKoders (){
+    for (let i=0; i< arrayKoders.length; i++){
+        console.log(`koder ${i+1}: ${arrayKoders[i]}`)
+    }
+}
 
 
 
 /* Permitir agregar un koder en alguna posicion deseada, 
   por ejemplo: "Fanny Alvarez, lugar 3"*/
-  MyArray.splice(3, 0, "Fanny Alvarez")
-  console.log(MyArray)
+  //MyArray.splice(3, 0, "Fanny Alvarez")
+  //console.log(MyArray) */
+  
+  /*Ejercicio
+  - Funcion que me regrese un numero aleatorio 
+  desde 0  hasta array.length
+  pasos: 
+  -crear una variable para el array
+  - pedirle al usuario que defina el valor del array 
 
+  - crear ciclo for que imprima con un console.log
+  desde 0 hasta el largo del array 
+  - 
+*/
+
+let longitud=prompt("dame longitud del arreglo")
+let array = []
+for (i=0;i<longitud.length;i++){
+    array.push("")
+    
+   
+    
+}
+console.log(array)
+let operacion= Math.floor(Math.random()*array.length)
+console.log(operacion)
