@@ -209,61 +209,46 @@ total                                     |   158.3
 */
 
 //- obtener los productos de tipo chips and drink
-/* const allProducts= products.map(x,y) => (x.name, y.type) 
-let chipAndDrink= products.filter(x=> x.type)
-console.log(allProducts ,chipAndDrink)
- */
-const totalProducts= products.map((producto)=> {
-  return (` ${producto.name} ${producto.type}`)
-  
-})
-console.log(totalProducts )
+const productsOrdered= arrayProducts => {
+  let products = arrayProducts.reduce ((accum, product)=>{
+    const {type}=product
+    return !accum[type]
+            ? {...accum,[type]: [product]}
+            : {...accum, [type]: [...accum[type], product]}
+  }, {})
+  return products
+}
+console.log (productsOrdered(products))
 
 //- obtener todos los productos < a $50 y obtener >= $50
-const numbers= products.map((producto=>producto.price))
-const  filteredNumbers= products.filter(x=>  x<50)
 
-console.log(filteredNumbers) 
-/* 
-const mayorMenor=products.filter(price=> price>=50)
-console.log(mayorMenor) 
- */
-  
-/* const separateProducts= products.map((producto)=> {
-    let priceProducts= producto.filter ((price)=> price.price)
-  return (`${priceProducts.name}`)
-  
-})
-console.log(separateProducts )
- */
-
-
-/* const getProductsbyPrice= (products, price)=> {
-  let fifty= products.filter((prices)=>prices.price)
-  let allproductos= products.forEach(products => {
-    allproductos.filter
-    
-  });
-  if (price<50 && price>=50){ 
-
-    return fifty
-  }
-  
+const getProducts= (isMayor, arrayProducts) => {
+  return arrayProducts.filter((product)=> isMayor? product.price>=50 : product.price<50)
   
 }
-console.log (getProductsbyPrice(products))
+
+//- obtener el inventario total en valor de todos 
+//los producto
+   
+const totalInventario= products.reduce ((accum, price)=> accum + price, 0 )
+console.log(`el inventario total es: $ ${totalInventario}`)
+
+
+// - obtener el inventario total en valor de los productos tipo chips
+//    - obtener el inventario total en valor de los productos tipo drink
+
+/* const totalDrink= products.reduce ((acc, product)=>{
+      return product.type === "chip" ? acc += product.price : acc 
+}, 0)
+console.log (totalDrink)
  */
-//   - obtener el inventario total 
-//    en valor de todos los productos
-const indexed= products.reduce((acc, el)=> ({
-  ...acc, 
-  [el.type]: el,
-}),{})
-console.log(indexed)
-
-// - obtener el inventario total en valor de 
-//los productos tipo chips
 
 
-
+const getTotalByType= (type, arrayProducts)=>{
+  return arrayProducts.reduce((acc, product)=>{
   
+  return product.type === type
+          ? acc += product.price
+          : acc 
+}, 0)
+}
