@@ -206,9 +206,8 @@ criterio: cel
 ]
 */
 
-/* 
+
 const searchSong= (arraySong,property, wordToSearch) => {
     const songs = arraySong.filter ((song)=> song[property].toLowerCase().includes(wordToSearch.toLowerCase()))
     return songs
 } 
-*/
