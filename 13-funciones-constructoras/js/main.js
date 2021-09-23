@@ -170,6 +170,7 @@ const koders= kodersCollection.map((person)=> {
     let persona= new Koder (person)
     console.log(persona.edad())
     console.log(persona.score())
+   
     return persona
 })
 
@@ -181,26 +182,54 @@ function Koder ({ name,lastName,birthday,generation,bootcamp,scores}){
     this.generation=generation,
     this.bootcamp=bootcamp,
     this.scores=scores,
+    // obtener la edad a partir de la fecha de nacimiento
     this.edad=function(){
         let [año] = this.birthday.split("/")
         return `el koder ${this.name} tiene la edad de ${2021-año}`     
     }
-        this.score= function(){
+    // obtener el promedio de sus scores 
+    this.score= function(){
            let Score= this.scores.reduce((accum,score)=>{
                return accum + score.score
                
            }, 0)
            return Score/this.scores.length
-           
         }
    
-    }
 
+    
+}
     
 console.log(koders)
 
+// coleccion de Koders que son de javascript
+const javaScript= (koder)=>{
+    let koders= koder.reduce ((accum,bootcamp)=>{
+        return bootcamp.bootcamp=== "JavaScript"
+        ?[...accum,bootcamp]
+        :accum
 
+    },[])
+    return koders
+}
+console.log(javaScript(koders))
+
+
+// coleccion de Koders que son de Python
+const python= (koder)=>{
+    let koders1= koder.reduce((accum,bootcamp)=>{
+        return bootcamp.bootcamp==="Python"
+        ?[...accum,bootcamp]
+        :accum
+
+    },[])
+    return koders1
+}
+console.log(python(koders))
 //Obtener promedio de sus scores
+
+
+
 
 
 
