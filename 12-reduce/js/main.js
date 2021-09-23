@@ -56,3 +56,5 @@ Usar reduce para obtener la siguiente informacion
 - el porcentaje de los hombres que votaron
 */
 
+
+
